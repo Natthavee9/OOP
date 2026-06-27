@@ -1,4 +1,4 @@
-package lab1;
+package  lab1;
 
 import javax.swing.JOptionPane;
 public class test {
