@@ -8,6 +8,6 @@ public class no1 {
              "Fahrenheit to Celsius",JOptionPane.QUESTION_MESSAGE);
             double fahren = Double.parseDouble(fahrenheit);
             double celsius = (5.0/9.0)*(fahren -32);
-            JOptionPane.showMessageDialog(null,"Celsius: "+ celsius , "Fahrenheit to Celsius",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null,"Celsius: "+ String.format("%.2f",celsius) , "Fahrenheit to Celsius",JOptionPane.INFORMATION_MESSAGE);
       }
 }

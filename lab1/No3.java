@@ -15,11 +15,14 @@ public class No3 {
             double side1 = Math.sqrt(Math.pow(x1-x2,2) + Math.pow(y1-y2,2));
             double side2 = Math.sqrt(Math.pow(x2-x3,2) + Math.pow(y2-y3,2));
             double side3 = Math.sqrt(Math.pow(x3-x1,2) + Math.pow(y3-y1,2));
-            /*Enter three points for a triangle: 1.5 -3.4 4.6 5 9.5 -3.4
-            The area of the triangle is 33.6*/
+            
             double s = (side1+side2+side3)/2;
             double area = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
-            System.out.printf("The area of the trangle is %.2f\n", area);
+            System.out.println("The area of the trangle is "+ String.format("%.2f", area));
             sc.close();
       }
 }
+/*
+ * Enter three points for a triangle: 1.5 -3.4 4.6 5 9.5 -3.4
+ * The area of the triangle is 33.6
+ */
