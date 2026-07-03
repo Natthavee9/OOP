@@ -16,7 +16,7 @@ public class No2 {
             System.out.print("Enter the monthly saving amount:");
             double value = sc.nextInt();
             double total_sum = m.finacial(value);
-            System.out.println("After the sixth month, the account value is $"+ 1);
+            System.out.println("After the sixth month, the account value is $"+ String.format("%.2f",total_sum));
             sc.close(); 
       }    
 }
