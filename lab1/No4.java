@@ -6,7 +6,7 @@ public class No4 {
             double balance = sc.nextDouble();
             double annualRate = sc.nextDouble();
             double interest = balance*(annualRate/1200);
-            System.out.println("The interest is "+String.format("%.2f", interest));
+            System.out.println("The interest is "+String.format("%.5f", interest));
             sc.close();
       }
       
