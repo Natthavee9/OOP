@@ -13,9 +13,19 @@ class Complex{
       r+=c.r;
       i+=c.i;
     }
+    
+    public void minus(Complex c){
+      r-=c.r;
+      i-=c.i;      
+    }
+
+    public void multi(Complex c){
+      r*=c.r;
+      i*=c.i;
+    }
 
     public void print(){
-          System.out.println(r + "+ i " + i);
+          System.out.println(r  + " + " + i + "i");
     }
       
 }
