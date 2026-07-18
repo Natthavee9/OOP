@@ -30,8 +30,8 @@ class Complex {
 
   public void divide(Complex c) {
     double denominator = Math.pow(c.r, 2) + Math.pow(c.i, 2);
-    double tempR = ((this.r * c.r) - (this.i * c.i)) / denominator;
-    double tempI = ((this.r * c.i) + (this.i * c.r)) / denominator;
+    double tempR = ((this.r * c.r) + (this.i * c.i)) / denominator;
+    double tempI = ((this.i * c.r) - (this.r * c.i)) / denominator;
     this.r = tempR;
     this.i = tempI;
   }
