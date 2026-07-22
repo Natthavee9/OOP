@@ -15,18 +15,18 @@ public class Palindrome {
             int count_index = 0;
             for(int i = 0;i<s.length();i++){
                   char c = s.charAt(i);
-                  if((c>='a' && c<='z')||(c>='1' && c<='9')){
+                  if((c>='a' && c<='z')||(c>='0' && c<='9')){
                         count_index++;
                   }  
             }
 
-            //string 2
+            
             char[] s1= new char[count_index];
             int ind =0;
 
             for(int i = 0 ; i<s.length();i++){
                   char c = s.charAt(i);
-                  if ((c >= 'a' && c <= 'z') || (c >= '1' && c <= '9')) {
+                  if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
                         s1[ind] = c;
                         ind++;
                   }
