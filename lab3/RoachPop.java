@@ -11,8 +11,8 @@ class RoachPopulation{
       }
 
       public void spray(){
-            int disease = this.n /10;
-            this.n = this.n - disease;
+            int  disease = (int)(this.n * 0.1);
+            this.n = this.n- disease;
       }
 
       public int  getRoaches(){

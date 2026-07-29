@@ -47,3 +47,8 @@ public class Palindrome {
             return true;
       }    
 }
+
+
+// RADAR
+// MADAM I’M ADAM
+
