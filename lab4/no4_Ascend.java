@@ -65,14 +65,16 @@ public class no4_Ascend {
             int[] B = a.AscendSort(A);
             int[] C = a.SortCommuFreq(B);
 
-            int idx = 0;
+            //
             for (int i = 0; i < B.length; i++) {
-                  // ตรวจสอบว่าเป็นตัวสุดท้าย หรือค่าไม่ซ้ำกับตัวถัดไป
                   if (i == B.length - 1 || B[i] != B[i + 1]) {
-                        System.out.print(B[i]+"\n"+ C[idx]);
-      
-                        idx++;
+                        System.out.print(B[i] + " ");
+                        //idx++;
                   }
-            } 
+            }  
+            System.out.println();
+            for(int i=0;i<C.length;i++){
+                  System.out.print(C[i] +" ");
+            }
       }   
 }
