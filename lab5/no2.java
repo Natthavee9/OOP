@@ -36,6 +36,9 @@ public class no2 {
                   else if(cmd == 2){
                         s.removeStars(list);
                   }
+                  else{
+                        break;
+                  }
 
                   System.out.println(list);
             }
