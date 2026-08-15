@@ -180,6 +180,10 @@ class FixAccount extends Account {
             if (current_year - dateCreated.getYear() >= 1) {
                   super.withdraw(monney);
             }
+            else{
+                  System.out.println("Cannot withdraw");
+            
+            }
       }
 
       @Override
@@ -214,7 +218,7 @@ public class lab6_no6 {
             System.out.println();
             FixAccount f = new FixAccount(1124, 20000);
             f.setAnnualInterestRate(7.0);
-            f.setDateCreated(new Date(1, "june", 2028));
+            f.setDateCreated(new Date(1, "june", 2025));
             f.setObjPerson(p2);
             
 
