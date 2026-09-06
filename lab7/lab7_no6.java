@@ -60,14 +60,14 @@ class MazeSol {
         int[][] distanEnd = CalDistance(end);
 
         int posibleWall = 0;
-        int minDistace = -1;
+        int minDistace = 999999;
 
         //loop find wall=0 
         for(int r=0;r<row;r++){
             for(int c =0;c<col;c++){
                 if(map[r][c] == 0){
-                    int minFromStart = -1;
-                    int minFromEnd = -1;
+                    int minFromStart = 999999;
+                    int minFromEnd = 999999;
                     for (int i = 0; i < 4; i++) {
                         int adjR = r + dR[i];
                         int adjC = c + dC[i];
@@ -83,7 +83,7 @@ class MazeSol {
                         }
                     }
                     // Look at the walkways around the four walls.
-                    if (minFromStart != -1 && minFromEnd != -1) {
+                    if (minFromStart != 999999 && minFromEnd != 999999) {
                         posibleWall++;
                         int totalDistan =   minFromStart+minFromEnd+1;//+1 for count wall
                         minDistace =  Math.min(totalDistan, minDistace);
