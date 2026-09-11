@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
 class ConvertUS extends JFrame{
@@ -24,13 +26,21 @@ class ConvertUS extends JFrame{
             pSouth.add(btConvert);
             add(jp, BorderLayout.CENTER);
             add(pSouth, BorderLayout.SOUTH);
+            
+            Listener spyObj = new Listener();
+            btConvert.addActionListener(spyObj);
+      }
 
-            btConvert.addActionListener((e) -> {
-                  double usd = Double.parseDouble(jtUS.getText());
-                  double cad = usd*1.5;
-                  jtCA.setText(String.format("%.2f", cad));
-            });
+      class Listener implements ActionListener{
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                  if(e.getSource() == btConvert){
+                        double usd = Double.parseDouble(jtUS.getText());
+                        double cad = usd * 1.5;
+                        jtCA.setText(String.format("%.2f", cad));
 
+                  }   
+            } 
       }
 
       void setDefault(JFrame windows){
