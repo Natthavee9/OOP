@@ -58,38 +58,25 @@ public class Hangman2 extends JFrame {
             }
       }
 
-      // =====================================================
-      // Panel สำหรับวาด Hangman
-      // =====================================================
+      
       class HangmanPanel extends JPanel {
 
-            // -------------------------------
-            // จุดหมุน
-            // -------------------------------
             int pivotX = 160;
             int pivotY = 20;
 
-            // -------------------------------
-            // สถานะ animation
-            // -------------------------------
+            
             boolean swinging = false;
             boolean spinning = false;
 
-            // มุม
             double angle = 0;
 
-            // ตัวแปรสำหรับการแกว่ง
+           
             double time = 0;
 
-            // -------------------------------
-            // Timer
-            // ทำงานทุก 16 ms
-            // -------------------------------
+            
             Timer timer = new Timer(16, new TimerListener());
 
-            // =================================================
-            // Timer Listener
-            // =================================================
+
             class TimerListener implements ActionListener {
 
                   @Override
