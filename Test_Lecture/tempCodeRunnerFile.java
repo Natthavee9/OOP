@@ -1,1 +1,1 @@
-spyObj
+g.drawString("Positon x,y:", xActor,yActor);

@@ -1,0 +1,1 @@
+add(drawArcPanel, BorderLayout.CENTER);
