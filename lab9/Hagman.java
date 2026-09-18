@@ -1,3 +1,4 @@
+// lab9 no 6
 import java.awt.*;
 import javax.swing.*;
 class DrawHangman extends JPanel{
