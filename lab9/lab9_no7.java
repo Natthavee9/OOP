@@ -175,7 +175,7 @@ class AccGUI extends JFrame {
                   }
 
             });
-            // เพิ่มคำสั่งดักจับเหตุการณ์ให้ปุ่ม SHOW
+            
             btnShow.addActionListener(new ActionListener() {
                   @Override
                   public void actionPerformed(ActionEvent e) {
