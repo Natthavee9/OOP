@@ -38,13 +38,13 @@ public class Fan extends JFrame {
                         drawArcPanel.speed = 0;
                         break;
                     case "1":
-                        drawArcPanel.speed = 2;
+                        drawArcPanel.speed = 1;
                         break;
                     case "2":
-                        drawArcPanel.speed = 5;
+                        drawArcPanel.speed = 3;
                         break;
                     case "3":
-                        drawArcPanel.speed = 10;
+                        drawArcPanel.speed =10;
                         break;
                     default:
                         break;
