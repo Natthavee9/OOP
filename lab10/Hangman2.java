@@ -13,11 +13,12 @@ public class Hangman2 extends JFrame {
 
             buttonPanel.add(btn1);
             buttonPanel.add(btn2);
-
+            JPanel eastContainer = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
+            eastContainer.add(buttonPanel);
             setLayout(new BorderLayout());
 
             add(hangmanPanel, BorderLayout.CENTER);
-            add(buttonPanel, BorderLayout.EAST);
+            add(eastContainer, BorderLayout.EAST);
 
             
             btn1.addActionListener(new ButtonListener());

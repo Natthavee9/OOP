@@ -52,9 +52,9 @@ public class NewClass6 extends JFrame {
 
         
         if (x_Balloon > getWidth() - 40) {
-          speedX = -Math.abs(speedX); // บินไปทางซ้าย
+          speedX = -Math.abs(speedX);
         } else if (x_Balloon < 20) {
-          speedX = Math.abs(speedX); // บินไปทางขวา
+          speedX = Math.abs(speedX); 
         }
         repaint();
       }
