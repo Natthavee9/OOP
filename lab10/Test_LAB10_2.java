@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.swing.JFrame;
 import javax.swing.*;
 
 /**
@@ -10,13 +11,13 @@ import javax.swing.*;
  * @author studentcs
  */
 
-public class Test_LAB10_2 extends JFrame {
+public class LAB10_2 extends JFrame {
 
     private StillClock clock1 = new StillClock();
     private StillClock clock2 = new StillClock();
 
 
-    public Test_LAB10_2() {
+    public LAB10_2() {
         setLayout(new FlowLayout());
         add(clock1);
         add(clock2);
@@ -47,7 +48,7 @@ public class Test_LAB10_2 extends JFrame {
      * Main method
      */
     public static void main(String[] args) {
-        JFrame frame = new Test_LAB10_2();
+        JFrame frame = new LAB10_2();
         frame.setTitle("ClockAnimation");
         frame.setSize(500, 250);
         frame.setLocationRelativeTo(null); // Center the frame
